@@ -1,50 +1,18 @@
 import React from 'react';
+import { useLanguage } from '../contexts/LanguageContext';
 import './Education.css';
 
 const Education = () => {
-  const studies = [
-    {
-      title: 'Master in 3D Animation and VFX',
-      school: 'Maya 2024 - 3D Digital Production 24',
-      extra: 'Specializzazione in Pipeline | Certificazione Autodesk',
-      date: '08.06.2023'
-    },
-    {
-      title: 'Master in 3D Computer Graphics',
-      school: 'Rainbow Academy',
-      date: '21.12.2023'
-    },
-    {
-      title: 'Master "3D Modeling e Animation" (3DSMax e Maya)',
-      school: 'Istituto Cefi',
-      date: '18.06.2025'
-    },
-    {
-      title: 'Scientific High School Diploma (indirizzo Informatica)',
-      school: 'Istituto Statale Maria Montessori, Roma',
-      date: '2019'
-    }
-  ];
-
-  const certifications = [
-    'Specialized Training Certificate in Python with Blender - Blender Italia (12.09.2023)',
-    'Specialized Training Certificate in Sculpting with Blender - Blender Italia (03.05.2022)',
-    'Advanced Training Certificate in Blender - Blender Italia (29.04.2022)',
-    'Basic Training Certificate in Blender - Blender Italia (22.04.2022)',
-    'Project "Assembly Line" in Unreal Animation - Prometeo Lab (Giugno - Settembre 2025)',
-    'First Aid and BLS (Basic Life Support Pediatric Defibrillation) - CSV Lazio (25.05.2023)',
-    'Modulo formazione rischi per volontari Servizio Civile - CSV Lazio (25.05.2023)',
-    'Training Course "The Importance of Soft Skills" - Porta Futuro Lazio (10.05.2023)'
-  ];
+  const { t } = useLanguage();
 
   return (
     <section id="education" className="education">
-      <h2 className="section-title">Formazione</h2>
+      <h2 className="section-title">{t.education.title}</h2>
       <div className="education-grid">
         <div className="education-column">
-          <h3>Percorso di studi</h3>
+          <h3>{t.education.studiesTitle}</h3>
           <ul className="education-list">
-            {studies.map((item, index) => (
+            {t.education.studies.map((item, index) => (
               <li key={index} className="education-item">
                 <div className="edu-main">
                   <h4>{item.title}</h4>
@@ -57,9 +25,9 @@ const Education = () => {
           </ul>
         </div>
         <div className="education-column">
-          <h3>Certificazioni e corsi</h3>
+          <h3>{t.education.certsTitle}</h3>
           <ul className="cert-list">
-            {certifications.map((cert, index) => (
+            {t.education.certs.map((cert, index) => (
               <li key={index}>{cert}</li>
             ))}
           </ul>
