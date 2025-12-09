@@ -14,7 +14,8 @@ const Experience = () => {
         'Supporto nelle fasi di testing e validazione con risultati positivi',
         'Feedback positivi dall\'utente finale',
         'Rispetto totale dei requisiti di riservatezza'
-      ]
+      ],
+      link: 'https://www.uviscan.com'
     },
     {
       title: 'Progetto di Servizio Civile',
@@ -38,7 +39,17 @@ const Experience = () => {
         {experiences.map((exp, index) => (
           <div key={index} className="timeline-item">
             <div className="timeline-dot"></div>
-            <div className="timeline-content">
+            <div 
+              className={`timeline-content ${exp.link ? 'clickable' : ''}`}
+              onClick={exp.link ? () => window.open(exp.link, '_blank') : undefined}
+              role={exp.link ? 'button' : undefined}
+              tabIndex={exp.link ? 0 : undefined}
+              onKeyPress={exp.link ? (e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                  window.open(exp.link, '_blank');
+                }
+              } : undefined}
+            >
               <div className="exp-header">
                 <div>
                   <h3>{exp.title}</h3>
@@ -52,6 +63,11 @@ const Experience = () => {
                   <li key={i}>{item}</li>
                 ))}
               </ul>
+              {exp.link && (
+                <div className="exp-link">
+                  Scopri di più su UViScan →
+                </div>
+              )}
             </div>
           </div>
         ))}

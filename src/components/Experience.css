@@ -42,7 +42,16 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.timeline-content:hover {
+.timeline-content.clickable {
+  cursor: pointer;
+}
+
+.timeline-content.clickable:hover {
+  transform: translateX(5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.timeline-content:not(.clickable):hover {
   transform: translateX(5px);
   box-shadow: var(--shadow-lg);
 }
@@ -98,6 +107,21 @@
   left: 0.5rem;
   color: var(--primary-color);
   font-weight: bold;
+}
+
+.exp-link {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-color);
+  color: var(--primary-color);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.timeline-content.clickable:hover .exp-link {
+  color: var(--secondary-color);
 }
 
 @media (max-width: 768px) {
