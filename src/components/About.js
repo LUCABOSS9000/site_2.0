@@ -27,7 +27,6 @@ const About = () => {
             <p><strong>Email:</strong> lb3Dev.pro@gmail.com</p>
             <p><strong>Telefono:</strong> +39 389 661 5192</p>
             <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/lb3dev" target="_blank" rel="noopener noreferrer">lb3dev</a></p>
-            <p><strong>Portfolio:</strong> <a href="https://lb3dev.streamlit.app" target="_blank" rel="noopener noreferrer">lb3dev.streamlit.app</a></p>
           </div>
         </div>
       </div>

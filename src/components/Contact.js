@@ -12,7 +12,6 @@ const Contact = () => {
             <p><strong>Email:</strong> <a href="mailto:lb3Dev.pro@gmail.com">lb3Dev.pro@gmail.com</a></p>
             <p><strong>Telefono:</strong> <a href="tel:+393896615192">+39 389 661 5192</a></p>
             <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/lb3dev" target="_blank" rel="noopener noreferrer">linkedin.com/in/lb3dev</a></p>
-            <p><strong>Portfolio:</strong> <a href="https://lb3dev.streamlit.app" target="_blank" rel="noopener noreferrer">lb3dev.streamlit.app</a></p>
           </div>
           <p className="contact-note">Disponibile per ruoli in pipeline 3D, technical direction, automazione pipeline e supporto tecnico alla produzione.</p>
         </div>
