@@ -1,43 +1,34 @@
 import React from 'react';
+import { useLanguage } from '../contexts/LanguageContext';
 import './Experience.css';
 
 const Experience = () => {
+  const { t } = useLanguage();
+  
   const experiences = [
     {
-      title: 'Montaggio UViScan',
-      company: 'Check One Srl',
-      period: 'Fine 2025',
-      type: 'Contratto a tempo determinato',
-      description: [
-        'Contributo al commissioning di un sistema Uviscan per ente della Pubblica Amministrazione',
-        'Supporto tecnico e tutoraggio operativo al personale di servizio',
-        'Supporto nelle fasi di testing e validazione con risultati positivi',
-        'Feedback positivi dall\'utente finale',
-        'Rispetto totale dei requisiti di riservatezza'
-      ],
+      title: t.experience.uviscan.title,
+      company: t.experience.uviscan.company,
+      period: t.experience.uviscan.period,
+      type: t.experience.uviscan.type,
+      description: t.experience.uviscan.desc,
       link: 'https://www.uviscan.com',
-      linkText: 'Scopri di più su UViScan →'
+      linkText: t.experience.uviscan.link
     },
     {
-      title: 'Progetto di Servizio Civile',
-      company: 'SVS BRIGATA VOLONTARIA ROMA',
-      period: '25 Maggio 2022 - 24 Maggio 2023',
-      type: 'Servizio Civile Universale',
-      description: [
-        'Progetto "RISK MITIGATION AND PREVENTION"',
-        'Presidenza del Consiglio dei Ministri - Dipartimento Politiche Giovanili',
-        'Prevenzione incendi boschivi',
-        'Risposta ad alluvioni e terremoti',
-        'Attività di supporto alla popolazione'
-      ],
+      title: t.experience.civil.title,
+      company: t.experience.civil.company,
+      period: t.experience.civil.period,
+      type: t.experience.civil.type,
+      description: t.experience.civil.desc,
       link: 'https://www.svsroma.net',
-      linkText: 'Visita il sito SVS Roma →'
+      linkText: t.experience.civil.link
     }
   ];
 
   return (
     <section id="experience" className="experience">
-      <h2 className="section-title">Esperienza Professionale</h2>
+      <h2 className="section-title">{t.experience.title}</h2>
       <div className="timeline">
         {experiences.map((exp, index) => (
           <div key={index} className="timeline-item">
