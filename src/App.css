@@ -4,7 +4,7 @@
 
 /* Sezione base */
 section {
-  padding: 60px 20px;
+  padding: 40px 20px;
   max-width: 1200px;
   margin: 0 auto;
   transition: background-color 0.3s ease;
@@ -22,7 +22,7 @@ section:nth-child(odd) {
 .section-title {
   font-size: 2.5rem;
   font-weight: 700;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
   text-align: center;
   color: var(--text-primary);
   position: relative;
@@ -44,7 +44,7 @@ section:nth-child(odd) {
 /* Responsive */
 @media (max-width: 768px) {
   section {
-    padding: 50px 20px;
+    padding: 35px 20px;
   }
 
   .section-title {
@@ -54,7 +54,7 @@ section:nth-child(odd) {
 
 @media (max-width: 480px) {
   section {
-    padding: 40px 15px;
+    padding: 30px 15px;
   }
 
   .section-title {
