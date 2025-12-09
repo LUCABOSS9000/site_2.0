@@ -17,16 +17,26 @@
   box-shadow: var(--shadow-lg);
 }
 
-.project-visual {
+.project-thumbnail {
   position: relative;
   width: 100%;
   padding-top: 56.25%; /* 16:9 aspect ratio */
   overflow: hidden;
+  background: var(--bg-light);
+}
+
+.project-thumbnail img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   transition: transform 0.3s ease;
 }
 
-.project-card:hover .project-visual {
-  transform: scale(1.02);
+.project-card:hover .project-thumbnail img {
+  transform: scale(1.05);
 }
 
 .play-overlay {
@@ -38,13 +48,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(0, 0, 0, 0.2);
-  transition: background 0.3s ease;
+  background: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transition: opacity 0.3s ease;
   cursor: pointer;
 }
 
 .project-card:hover .play-overlay {
-  background: rgba(0, 0, 0, 0.4);
+  opacity: 1;
 }
 
 .play-overlay svg {
@@ -52,11 +63,6 @@
   height: 80px;
   color: white;
   filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
-  transition: transform 0.3s ease;
-}
-
-.project-card:hover .play-overlay svg {
-  transform: scale(1.1);
 }
 
 .project-content {
