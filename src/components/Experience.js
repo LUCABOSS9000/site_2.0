@@ -4,7 +4,7 @@ import './Experience.css';
 const Experience = () => {
   const experiences = [
     {
-      title: 'Pipeline ATD',
+      title: 'Montaggio UViScan',
       company: 'Check One Srl',
       period: 'Fine 2025',
       type: 'Contratto a tempo determinato',
