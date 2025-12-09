@@ -15,7 +15,8 @@ const Experience = () => {
         'Feedback positivi dall\'utente finale',
         'Rispetto totale dei requisiti di riservatezza'
       ],
-      link: 'https://www.uviscan.com'
+      link: 'https://www.uviscan.com',
+      linkText: 'Scopri di più su UViScan →'
     },
     {
       title: 'Progetto di Servizio Civile',
@@ -28,7 +29,9 @@ const Experience = () => {
         'Prevenzione incendi boschivi',
         'Risposta ad alluvioni e terremoti',
         'Attività di supporto alla popolazione'
-      ]
+      ],
+      link: 'https://www.svsroma.net',
+      linkText: 'Visita il sito SVS Roma →'
     }
   ];
 
@@ -65,7 +68,7 @@ const Experience = () => {
               </ul>
               {exp.link && (
                 <div className="exp-link">
-                  Scopri di più su UViScan →
+                  {exp.linkText}
                 </div>
               )}
             </div>
