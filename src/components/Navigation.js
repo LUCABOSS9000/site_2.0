@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
+import { useTheme } from '../contexts/ThemeContext';
 import './Navigation.css';
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { language, toggleLanguage, t } = useLanguage();
+  const { theme, toggleTheme } = useTheme();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -45,6 +47,16 @@ const Navigation = () => {
           <li><button onClick={() => scrollToSection('skills')}>{t.nav.skills}</button></li>
           <li><button onClick={() => scrollToSection('projects')}>{t.nav.projects}</button></li>
           <li><button onClick={() => scrollToSection('contact')}>{t.nav.contact}</button></li>
+          <li>
+            <button 
+              className="theme-toggle" 
+              onClick={toggleTheme}
+              aria-label="Toggle theme"
+              title={theme === 'light' ? 'Switch to dark mode' : 'Switch to light mode'}
+            >
+              {theme === 'light' ? '🌙' : '☀️'}
+            </button>
+          </li>
           <li>
             <button 
               className="lang-toggle" 
