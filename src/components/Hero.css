@@ -1,9 +1,10 @@
 .hero {
-  min-height: 100vh;
+  min-height: 85vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 100px;
+  padding-top: 80px;
+  padding-bottom: 40px;
   gap: 4rem;
 }
 
@@ -113,7 +114,8 @@
   .hero {
     flex-direction: column;
     text-align: center;
-    padding-top: 120px;
+    padding-top: 100px;
+    min-height: 80vh;
   }
 
   .hero-content {
