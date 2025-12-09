@@ -74,6 +74,24 @@
   width: 80%;
 }
 
+.lang-toggle {
+  background: var(--primary-color) !important;
+  color: white !important;
+  border-radius: 6px;
+  padding: 0.5rem 1rem !important;
+  font-weight: 600 !important;
+  transition: all 0.3s ease !important;
+}
+
+.lang-toggle::after {
+  display: none !important;
+}
+
+.lang-toggle:hover {
+  background: var(--secondary-color) !important;
+  transform: translateY(-2px);
+}
+
 .mobile-menu-btn {
   display: none;
   flex-direction: column;

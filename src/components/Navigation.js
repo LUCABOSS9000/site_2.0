@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
+import { useLanguage } from '../contexts/LanguageContext';
 import './Navigation.css';
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { language, toggleLanguage, t } = useLanguage();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -37,12 +39,21 @@ const Navigation = () => {
         </button>
 
         <ul className={`nav-menu ${isMobileMenuOpen ? 'active' : ''}`}>
-          <li><button onClick={() => scrollToSection('about')}>About</button></li>
-          <li><button onClick={() => scrollToSection('experience')}>Experience</button></li>
-          <li><button onClick={() => scrollToSection('education')}>Education</button></li>
-          <li><button onClick={() => scrollToSection('skills')}>Skills</button></li>
-          <li><button onClick={() => scrollToSection('projects')}>Projects</button></li>
-          <li><button onClick={() => scrollToSection('contact')}>Contact</button></li>
+          <li><button onClick={() => scrollToSection('about')}>{t.nav.about}</button></li>
+          <li><button onClick={() => scrollToSection('experience')}>{t.nav.experience}</button></li>
+          <li><button onClick={() => scrollToSection('education')}>{t.nav.education}</button></li>
+          <li><button onClick={() => scrollToSection('skills')}>{t.nav.skills}</button></li>
+          <li><button onClick={() => scrollToSection('projects')}>{t.nav.projects}</button></li>
+          <li><button onClick={() => scrollToSection('contact')}>{t.nav.contact}</button></li>
+          <li>
+            <button 
+              className="lang-toggle" 
+              onClick={toggleLanguage}
+              aria-label="Toggle language"
+            >
+              {language === 'it' ? '🇬🇧 EN' : '🇮🇹 IT'}
+            </button>
+          </li>
         </ul>
       </div>
     </nav>

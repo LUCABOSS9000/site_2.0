@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import { LanguageProvider } from './contexts/LanguageContext';
 import Hero from './components/Hero';
 import About from './components/About';
 import Experience from './components/Experience';
@@ -11,16 +12,18 @@ import Navigation from './components/Navigation';
 
 function App() {
   return (
-    <div className="App">
-      <Navigation />
-      <Hero />
-      <About />
-      <Experience />
-      <Education />
-      <Skills />
-      <Projects />
-      <Contact />
-    </div>
+    <LanguageProvider>
+      <div className="App">
+        <Navigation />
+        <Hero />
+        <About />
+        <Experience />
+        <Education />
+        <Skills />
+        <Projects />
+        <Contact />
+      </div>
+    </LanguageProvider>
   );
 }
 
