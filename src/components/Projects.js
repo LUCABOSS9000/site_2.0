@@ -17,6 +17,10 @@ const Projects = () => {
     {
       videoUrl: 'https://youtu.be/E5iFb0Ndye4',
       videoId: 'E5iFb0Ndye4'
+    },
+    {
+      videoUrl: 'https://youtu.be/4HaxrUTv7uA',
+      videoId: '4HaxrUTv7uA'
     }
   ];
 

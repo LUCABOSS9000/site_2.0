@@ -132,6 +132,11 @@ export const translations = {
           title: 'Hero in the Robot Invasion',
           description: 'Progetto di animazione 3D che esplora dinamiche action e character animation in un contesto sci-fi.',
           date: '2024'
+        },
+        {
+          title: 'Assembly Line',
+          description: 'Progetto "Assembly Line" realizzato in Unreal Engine. Animazione cinematica che mostra una catena di montaggio industriale con focus su illuminazione e composizione.',
+          date: '2025'
         }
       ]
     },
@@ -277,6 +282,11 @@ export const translations = {
           title: 'Hero in the Robot Invasion',
           description: '3D animation project exploring action dynamics and character animation in a sci-fi context.',
           date: '2024'
+        },
+        {
+          title: 'Assembly Line',
+          description: '"Assembly Line" project created in Unreal Engine. Cinematic animation showcasing an industrial assembly line with focus on lighting and composition.',
+          date: '2025'
         }
       ]
     },
