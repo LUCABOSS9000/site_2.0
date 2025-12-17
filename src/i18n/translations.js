@@ -84,14 +84,14 @@ export const translations = {
         }
       ],
       certs: [
-        'Specialized Training Certificate in Python with Blender - Blender Italia (12.09.2023)',
-        'Specialized Training Certificate in Sculpting with Blender - Blender Italia (03.05.2022)',
-        'Advanced Training Certificate in Blender - Blender Italia (29.04.2022)',
-        'Basic Training Certificate in Blender - Blender Italia (22.04.2022)',
         'Project "Assembly Line" in Unreal Animation - Prometeo Lab (Giugno - Settembre 2025)',
+        'Specialized Training Certificate in Python with Blender - Blender Italia (12.09.2023)',
         'First Aid and BLS (Basic Life Support Pediatric Defibrillation) - CSV Lazio (25.05.2023)',
         'Modulo formazione rischi per volontari Servizio Civile - CSV Lazio (25.05.2023)',
-        'Training Course "The Importance of Soft Skills" - Porta Futuro Lazio (10.05.2023)'
+        'Training Course "The Importance of Soft Skills" - Porta Futuro Lazio (10.05.2023)',
+        'Specialized Training Certificate in Sculpting with Blender - Blender Italia (03.05.2022)',
+        'Advanced Training Certificate in Blender - Blender Italia (29.04.2022)',
+        'Basic Training Certificate in Blender - Blender Italia (22.04.2022)'
       ]
     },
     skills: {
@@ -234,14 +234,14 @@ export const translations = {
         }
       ],
       certs: [
-        'Specialized Training Certificate in Python with Blender - Blender Italia (12.09.2023)',
-        'Specialized Training Certificate in Sculpting with Blender - Blender Italia (03.05.2022)',
-        'Advanced Training Certificate in Blender - Blender Italia (29.04.2022)',
-        'Basic Training Certificate in Blender - Blender Italia (22.04.2022)',
         'Project "Assembly Line" in Unreal Animation - Prometeo Lab (June - September 2025)',
+        'Specialized Training Certificate in Python with Blender - Blender Italia (12.09.2023)',
         'First Aid and BLS (Basic Life Support Pediatric Defibrillation) - CSV Lazio (25.05.2023)',
         'Risk training module for Civil Service volunteers - CSV Lazio (25.05.2023)',
-        'Training Course "The Importance of Soft Skills" - Porta Futuro Lazio (10.05.2023)'
+        'Training Course "The Importance of Soft Skills" - Porta Futuro Lazio (10.05.2023)',
+        'Specialized Training Certificate in Sculpting with Blender - Blender Italia (03.05.2022)',
+        'Advanced Training Certificate in Blender - Blender Italia (29.04.2022)',
+        'Basic Training Certificate in Blender - Blender Italia (22.04.2022)'
       ]
     },
     skills: {
