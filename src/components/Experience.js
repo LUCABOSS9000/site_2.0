@@ -12,7 +12,7 @@ const Experience = () => {
       period: t.experience.uviscan.period,
       type: t.experience.uviscan.type,
       description: t.experience.uviscan.desc,
-      link: 'https://www.uviscan.com',
+      link: 'https://www.uviscan-italy.com',
       linkText: t.experience.uviscan.link
     },
     {
