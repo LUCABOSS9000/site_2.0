@@ -28,7 +28,13 @@ const Navigation = () => {
   return (
     <nav className={`navigation ${isScrolled ? 'scrolled' : ''}`}>
       <div className="nav-container">
-        <div className="nav-logo" onClick={() => scrollToSection('hero')}>LB</div>
+        <div className="nav-logo" onClick={() => scrollToSection('hero')}>
+          <img
+            src={theme === 'dark' ? '/images/LB3DDEV-01.png' : '/images/LB3DDEV-02.png'}
+            alt="LB3DDEV logo"
+            className="nav-logo-image"
+          />
+        </div>
         
         <button 
           className="mobile-menu-btn"
