@@ -25,12 +25,16 @@ const Navigation = () => {
     }
   };
 
+  const logoSrc = theme === 'dark'
+    ? `${process.env.PUBLIC_URL}/images/LB3DDEV-01.png`
+    : `${process.env.PUBLIC_URL}/images/LB3DDEV-02.png`;
+
   return (
     <nav className={`navigation ${isScrolled ? 'scrolled' : ''}`}>
       <div className="nav-container">
         <div className="nav-logo" onClick={() => scrollToSection('hero')}>
           <img
-            src={theme === 'dark' ? '/images/LB3DDEV-01.png' : '/images/LB3DDEV-02.png'}
+            src={logoSrc}
             alt="LB3DDEV logo"
             className="nav-logo-image"
           />
