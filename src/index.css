@@ -6,7 +6,7 @@
 
 :root {
   /* Light Mode - Professional Palette */
-  --primary-color: #3B82F6;
+  --primary-color: #5DBEBA;
   --secondary-color: #2563EB;
   --accent-color: #5DBEBA;
   --text-primary: #1F2937;
@@ -23,7 +23,7 @@
 [data-theme="dark"] {
   /* Dark Mode - Elegant Palette */
   --primary-color: #5DBEBA;
-  --secondary-color: #3B82F6;
+  --secondary-color: #5DBEBA;
   --accent-color: #93C5FD;
   --text-primary: #F9FAFB;
   --text-secondary: #D1D5DB;
