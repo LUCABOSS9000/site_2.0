@@ -8,7 +8,7 @@
   /* Light Mode - Professional Palette */
   --primary-color: #3B82F6;
   --secondary-color: #2563EB;
-  --accent-color: #60A5FA;
+  --accent-color: #5DBEBA;
   --text-primary: #1F2937;
   --text-secondary: #6B7280;
   --bg-primary: #FAFBFC;
@@ -22,7 +22,7 @@
 
 [data-theme="dark"] {
   /* Dark Mode - Elegant Palette */
-  --primary-color: #60A5FA;
+  --primary-color: #5DBEBA;
   --secondary-color: #3B82F6;
   --accent-color: #93C5FD;
   --text-primary: #F9FAFB;
