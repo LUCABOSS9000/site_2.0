@@ -1,9 +1,14 @@
 import React from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
+import { useTheme } from '../contexts/ThemeContext';
 import './Hero.css';
 
 const Hero = () => {
   const { t } = useLanguage();
+  const { theme } = useTheme();
+  const logoSrc = theme === 'dark'
+    ? `${process.env.PUBLIC_URL}/images/LB3DDEV-01.png`
+    : `${process.env.PUBLIC_URL}/images/LB3DDEV-000.png`;
   
   return (
     <section id="hero" className="hero">
@@ -20,7 +25,7 @@ const Hero = () => {
         </div>
       </div>
       <div className="hero-visual">
-        <div className="animated-cube"></div>
+        <img src={logoSrc} alt="LB3DDEV logo" className="hero-logo" />
       </div>
     </section>
   );
