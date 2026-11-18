@@ -1,12 +1,12 @@
 export const translations = {
   it: {
     nav: {
-      about: 'About',
-      experience: 'Experience',
-      education: 'Education',
-      skills: 'Skills',
-      projects: 'Projects',
-      contact: 'Contact'
+      about: 'Chi Sono',
+      experience: 'Esperienza',
+      education: 'Formazione',
+      skills: 'Competenze',
+      projects: 'Progetti',
+      contact: 'Contatti'
     },
     hero: {
       greeting: 'Ciao, sono',
@@ -18,7 +18,7 @@ export const translations = {
     about: {
       title: 'Chi Sono',
       text1: 'Sono un professionista specializzato in <strong>pipeline 3D e produzione digitale</strong>, con una solida formazione in animazione, VFX e programmazione Python per l\'ambiente 3D.',
-      text2: 'Nel 2025 ho contribuito al commissioning di un sistema Uviscan presso Check One Srl, fornendo supporto tecnico e formazione operativa con feedback positivi dal cliente finale.',
+      text2: 'Tra la fine del 2025 e il 2026 ho partecipato a più incarichi a tempo determinato presso Check One Srl, contribuendo al commissioning di sistemi UViScan presso enti pubblici e strutture militari, con supporto tecnico e formazione operativa.',
       text3: 'La mia passione per la tecnologia e l\'arte digitale mi ha portato a specializzarmi in strumenti come Maya, 3ds Max, Blender e Unreal Engine, con particolare focus sulla creazione di pipeline efficienti e automatizzate.',
       contactsTitle: 'Contatti',
       email: 'Email:',
@@ -28,13 +28,13 @@ export const translations = {
     experience: {
       title: 'Esperienza Professionale',
       uviscan: {
-        title: 'Montaggio UViScan',
+        title: 'Commissioning UViScan',
         company: 'Check One Srl',
-        period: 'Fine 2025',
+        period: 'Fine 2025 - 2026',
         type: 'Contratto a tempo determinato',
         desc: [
-          'Contributo al commissioning di un sistema Uviscan per ente della Pubblica Amministrazione',
-          'Supporto tecnico e tutoraggio operativo al personale di servizio',
+          'Contributo a più commissioning di sistemi UViScan presso enti della Pubblica Amministrazione e strutture militari',
+          'Supporto tecnico e tutoraggio operativo sul sito al personale di servizio',
           'Supporto nelle fasi di testing e validazione con risultati positivi',
           'Feedback positivi dall\'utente finale',
           'Rispetto totale dei requisiti di riservatezza'
@@ -65,7 +65,7 @@ export const translations = {
           title: 'Master in 3D Animation and VFX',
           school: 'Maya 2024 - 3D Digital Production 24',
           extra: 'Specializzazione in Pipeline | Certificazione Autodesk',
-          date: '08.06.2023'
+          date: '2024'
         },
         {
           title: 'Master in 3D Computer Graphics',
@@ -84,8 +84,11 @@ export const translations = {
         }
       ],
       certs: [
+        'This is animation course - Yellowbrick, Sony Pictures Animation e Sony Pictures Imageworks (26.08.2026)',
+        'Corso Pipeline and AI - M74 (2026)',
         'Project "Assembly Line" in Unreal Animation - Prometeo Lab (Giugno - Settembre 2025)',
         'Specialized Training Certificate in Python with Blender - Blender Italia (12.09.2023)',
+        'Cambridge English Qualification B2 (08.06.2023)',
         'First Aid and BLS (Basic Life Support Pediatric Defibrillation) - CSV Lazio (25.05.2023)',
         'Modulo formazione rischi per volontari Servizio Civile - CSV Lazio (25.05.2023)',
         'Training Course "The Importance of Soft Skills" - Porta Futuro Lazio (10.05.2023)',
@@ -100,6 +103,7 @@ export const translations = {
       soft: 'Soft skills',
       techList: [
         'Python (forte competenza in ambiente 3D)',
+        'Pipeline 3D e automazione con AI',
         'Autodesk Maya',
         '3ds Max',
         'Blender (modellazione, sculpting, pipeline)',
@@ -168,7 +172,7 @@ export const translations = {
     about: {
       title: 'About Me',
       text1: 'I am a professional specialized in <strong>3D pipeline and digital production</strong>, with solid training in animation, VFX and Python programming for 3D environments.',
-      text2: 'In 2025 I contributed to the commissioning of a Uviscan system at Check One Srl, providing technical support and operational training with positive feedback from the end client.',
+      text2: 'Between late 2025 and 2026 I took part in several fixed-term assignments at Check One Srl, contributing to the commissioning of UViScan systems for public administration entities and military facilities, with technical support and operational training.',
       text3: 'My passion for technology and digital art led me to specialize in tools like Maya, 3ds Max, Blender and Unreal Engine, with particular focus on creating efficient and automated pipelines.',
       contactsTitle: 'Contacts',
       email: 'Email:',
@@ -178,13 +182,13 @@ export const translations = {
     experience: {
       title: 'Professional Experience',
       uviscan: {
-        title: 'UViScan Assembly',
+        title: 'UViScan Commissioning',
         company: 'Check One Srl',
-        period: 'Late 2025',
+        period: 'Late 2025 - 2026',
         type: 'Fixed-term contract',
         desc: [
-          'Contribution to the commissioning of a Uviscan system for Public Administration entity',
-          'Technical support and operational tutoring to service staff',
+          'Contributed to multiple UViScan commissioning projects for public administration entities and military facilities',
+          'Technical support and on-site operational tutoring for service staff',
           'Support in testing and validation phases with positive results',
           'Positive feedback from end user',
           'Full compliance with confidentiality requirements'
@@ -215,7 +219,7 @@ export const translations = {
           title: 'Master in 3D Animation and VFX',
           school: 'Maya 2024 - 3D Digital Production 24',
           extra: 'Pipeline Specialization | Autodesk Certified',
-          date: '08.06.2023'
+          date: '2024'
         },
         {
           title: 'Master in 3D Computer Graphics',
@@ -234,8 +238,11 @@ export const translations = {
         }
       ],
       certs: [
+        'This is animation course - Yellowbrick, Sony Pictures Animation and Sony Pictures Imageworks (August 26, 2026)',
+        'Pipeline and AI course - M74 (2026)',
         'Project "Assembly Line" in Unreal Animation - Prometeo Lab (June - September 2025)',
         'Specialized Training Certificate in Python with Blender - Blender Italia (12.09.2023)',
+        'Cambridge English Qualification B2 (08.06.2023)',
         'First Aid and BLS (Basic Life Support Pediatric Defibrillation) - CSV Lazio (25.05.2023)',
         'Risk training module for Civil Service volunteers - CSV Lazio (25.05.2023)',
         'Training Course "The Importance of Soft Skills" - Porta Futuro Lazio (10.05.2023)',
@@ -250,6 +257,7 @@ export const translations = {
       soft: 'Soft Skills',
       techList: [
         'Python (strong competence in 3D environment)',
+        '3D pipeline and AI-assisted automation',
         'Autodesk Maya',
         '3ds Max',
         'Blender (modeling, sculpting, pipeline)',
