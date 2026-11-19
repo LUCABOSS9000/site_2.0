@@ -21,7 +21,7 @@ const Experience = () => {
       period: t.experience.civil.period,
       type: t.experience.civil.type,
       description: t.experience.civil.desc,
-      link: 'https://www.svsroma.net',
+      link: 'https://www.brigatavolontariaroma.org',
       linkText: t.experience.civil.link
     }
   ];
